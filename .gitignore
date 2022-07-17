@@ -31,5 +31,8 @@ yarn-error.log*
 # vercel
 .vercel
 
+# prettierrc
+.prettierrc
+
 # typescript
 *.tsbuildinfo

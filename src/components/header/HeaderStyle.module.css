@@ -1,0 +1,50 @@
+.Container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  padding: 10rem;
+  padding-top: 2rem;
+}
+.Div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  font-size: 2rem;
+}
+.Div2 {
+  grid-area: 1 / 2 / 2 / 4;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+}
+.Div3 {
+  grid-area: 1 / 5 / 2 / 6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.NavLink {
+  font-size: 2rem;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.75);
+  transition: 0.4s ease;
+  font-size: 2rem;
+}
+.NavLink:hover {
+  color: #fff;
+  opacity: 1;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+.SocialIcons {
+  transition: 0.3s ease;
+  color: white;
+  border-radius: 50px;
+  padding: 8px;
+}
+.SocialIcons:hover {
+  background-color: #212d45;
+  transform: scale(1.2);
+  cursor: pointer;
+}
