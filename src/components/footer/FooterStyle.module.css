@@ -18,3 +18,60 @@
   color: #fff;
   left: 6px;
 }
+.SocialIconContainer {
+  max-width: 1040px;
+  display: flex;
+  justify-content: space-between;
+}
+.CompanyContainer {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-right: auto;
+}
+.Slogan {
+  color: rgba(255, 255, 255, 0.5);
+  min-width: 280px;
+  letter-spacing: 0.02em;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 1rem;
+}
+.SocialContainer {
+  display: flex;
+  align-items: center;
+}
+.SocialIcons {
+  transition: 0.3s ease;
+  color: white;
+  border-radius: 50px;
+  padding: 8px;
+}
+.SocialIcons:hover {
+  background-color: #212d45;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.LinkList {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(85px, 220px));
+  gap: 40px;
+  padding: 40px 0 28px;
+}
+
+.LinkColumn {
+  display: flex;
+  flex-direction: column;
+  max-width: 220px;
+  width: 100%;
+}
+.LinkTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 16px;
+}
