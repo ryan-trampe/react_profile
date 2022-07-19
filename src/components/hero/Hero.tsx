@@ -1,8 +1,9 @@
 import React from "react";
 
+import Button from "../button/Button";
 import styles from "./HeroStyle.module.css";
 
-function Hero() {
+function Hero(props:any) {
   return (
     <section className="GlobalSection">
       <div className={styles.LeftSection}>
@@ -11,8 +12,9 @@ function Hero() {
           My Personal Portfolio
         </h2>
         <p className="SectionText">
-          This has all my personal information and portfolio work and personal projects.
+          This has all my personal information, portfolio work and personal projects.
         </p>
+        <Button onClick={props.handleClick}>Learn More</Button>
       </div>
     </section>
   );
