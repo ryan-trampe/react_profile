@@ -4,6 +4,14 @@
   grid-template-rows: 1fr;
   padding: 10rem;
   padding-top: 2rem;
+  padding-bottom: 2rem;
+  @media screen and (max-width: 640px) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 60px);
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+  }
 }
 .Div1 {
   grid-area: 1 / 1 / 2 / 2;
@@ -11,18 +19,28 @@
   flex-direction: row;
   align-content: center;
   font-size: 2rem;
+  @media screen and (max-width: 640px) {
+    grid-area: 1 / 1 / 2 / 3;
+  }
 }
 .Div2 {
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
   justify-content: space-around;
   font-size: 2rem;
+  @media screen and (max-width: 640px) {
+    grid-area: 2 / 2 / 3 / 5;
+  }
 }
 .Div3 {
   grid-area: 1 / 5 / 2 / 6;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @media screen and (max-width: 640px) {
+    align-items: center;
+    grid-area: 1 / 4 / 2 / 6;
+  }
 }
 .NavLink {
   font-size: 2rem;
@@ -30,6 +48,9 @@
   color: rgba(255, 255, 255, 0.75);
   transition: 0.4s ease;
   font-size: 2rem;
+  @media screen (max-width: 640px) {
+    padding: 0.5rem;
+  }
 }
 .NavLink:hover {
   color: #fff;
@@ -42,6 +63,8 @@
   color: white;
   border-radius: 50px;
   padding: 8px;
+  display: flex;
+  align-items: center;
 }
 .SocialIcons:hover {
   background-color: #212d45;

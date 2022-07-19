@@ -9,7 +9,7 @@ function Header() {
   return (
     <div className={styles.Container}>
       <div className={styles.Div1}>
-        <a style={{ display: "flex", alignItems: "center", color: "white" }}>
+        <a href="#home" style={{ display: "flex", alignItems: "center", color: "white" }}>
           <DiCssdeck size="3rem"></DiCssdeck>
           <span>Portfolio</span>
         </a>
@@ -25,16 +25,21 @@ function Header() {
             <a className={styles.NavLink}>About</a>
           </Link>
         </li>
+        <li>
+          <Link href="#contact">
+            <a className={styles.NavLink}>Contact</a>
+          </Link>
+        </li>
       </div>
       <div className={styles.Div3}>
         <a className={styles.SocialIcons}>
-          <AiFillGithub size="3.5rem"></AiFillGithub>
+          <AiFillGithub size="3rem"></AiFillGithub>
         </a>
         <a className={styles.SocialIcons}>
-          <AiFillLinkedin size="3.5rem"></AiFillLinkedin>
+          <AiFillLinkedin size="3rem"></AiFillLinkedin>
         </a>
         <a className={styles.SocialIcons}>
-          <AiFillInstagram size="3.5rem"></AiFillInstagram>
+          <AiFillInstagram size="3rem"></AiFillInstagram>
         </a>
       </div>
     </div>
