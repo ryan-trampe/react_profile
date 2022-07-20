@@ -7,14 +7,19 @@ function Hero(props:any) {
   return (
     <section className="GlobalSection">
       <div className={styles.LeftSection}>
-        <h2 className="SectionTitle">
-          Welcome to <br />
-          My Personal Portfolio
-        </h2>
         <p className="SectionText">
-          This has all my personal information, portfolio work and personal projects.
+          Hello, my name is
         </p>
-        <Button onClick={props.handleClick}>Learn More</Button>
+        <h2 className="SectionTitle">
+          Ryan Trampe <br />
+          Software Developer
+        </h2>
+        <p className={styles.SectionSubtext}>
+          Web Design | Embedded Software 
+        </p>
+        <a href="/resume.pdf">
+          <Button onClick={props.handleClick}>Resume</Button>
+        </a>
       </div>
     </section>
   );

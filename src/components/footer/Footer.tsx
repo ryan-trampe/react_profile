@@ -27,13 +27,13 @@ function Footer() {
           <p className={styles.Slogan}>Innovating one project at a time</p>
         </div>
         <div className={styles.SocialContainer}>
-          <a className={styles.SocialIcons}>
+          <a className={styles.SocialIcons} href="https://github.com/ryan-trampe">
             <AiFillGithub size="3rem" />
           </a>
-          <a className={styles.SocialIcons}>
+          <a className={styles.SocialIcons} href="https://www.linkedin.com/in/ryan-trampe-5960591b7/">
             <AiFillLinkedin size="3rem" />
           </a>
-          <a className={styles.SocialIcons}>
+          <a className={styles.SocialIcons} href="https://www.instagram.com/coldlikeice101/">
             <AiFillInstagram size="3rem" />
           </a>
         </div>
