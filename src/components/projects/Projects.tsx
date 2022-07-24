@@ -11,6 +11,7 @@ function Projects() {
         "Using A Tiva C series microcontroller, this device tracks the orientation of an object.",
       tags: ["C", "Tiva C Series microcontroller"],
       source: "https://github.com/ryan-trampe/accelerometer_track",
+      pic: "/pic0.png",
       id: 0,
     },
     {
@@ -19,6 +20,7 @@ function Projects() {
         "Web application child adoption solution for the browser. Shows a database of children for adoption and foster-parents looking to adopt",
       tags: ["HTML", "Python (Django)", "Bootstrap", "Docker/Docker-Compose"],
       source: "https://github.com/ryan-trampe/fostr_python",
+      pic: "/pic1.png",
       id: 1,
     },
     {
@@ -27,6 +29,7 @@ function Projects() {
         "Simulated 8-bit microprocessor with custom instruction. Custom components include program counter, instruction decoder, and program sequencer.",
       tags: ["Quartus", "SystemVerilog"],
       source: "https://github.com/ryan-trampe/accelerometer_track",
+      pic: "/pic2.png",
       id: 2,
     },
   ];
@@ -48,7 +51,10 @@ function Projects() {
         {projectList.map((p, i) => {
           return (
             <div className={styles.BlogCard} key={i}>
-              <Image alt="Picture" src="/pic0.png" width={100} height={100} objectFit="cover" />
+              {/* <Image alt="Picture" src={p.pic} width={100} height={100} objectFit="cover" /> */}
+              <picture>
+                <img alt="picture" className={styles.Img} src={p.pic} />
+              </picture>
               <div className={styles.TitleContent}>
                 <h3 className={styles.HeaderThree}>{p.title}</h3>
                 <hr className={styles.Hr} />

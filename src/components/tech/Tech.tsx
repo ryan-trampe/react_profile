@@ -31,7 +31,7 @@ function Tech() {
       <div className="SectionDivide" />
       <h2 className="SectionTitle">Technologies</h2>
       <p className="SectionText">
-        I have worked with a range of technologies in the development world!
+        Here are the techonolgies I have worked with!
       </p>
       {/* Auto-scrolling carousel */}
       <div className={styles.CarouselWrapper}>

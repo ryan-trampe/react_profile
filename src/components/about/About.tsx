@@ -6,7 +6,9 @@ function About(props: any) {
   return (
     <section className="GlobalSection">
       <h2 className="SectionTitle">About me</h2>
-      <p className="SectionText"></p>
+      <p className={styles.AboutText}>
+        Hello! My name is Ryan and I enjoy
+      </p>
     </section>
   );
 }
