@@ -14,29 +14,21 @@ function Projects() {
       id: 0,
     },
     {
-        title: "Fostr",
-        description:
-          "Web application child adoption solution for the browser. Shows a database of children for adoption and foster-parents looking to adopt",
-        tags: ["HTML", "Python (Django)", "Bootstrap", "Docker/Docker-Compose"],
-        source: "https://github.com/ryan-trampe/fostr_python",
-        id: 1,
-      },
-      {
-        title: "Custom Microprocessor",
-        description:
-          "Simulated 8-bit microprocessor with custom instruction. Custom components include program counter, instruction decoder, and program sequencer.",
-        tags: ["Quartus","SystemVerilog"],
-        source: "https://github.com/ryan-trampe/accelerometer_track",
-        id: 2,
-      },
-      {
-        title: "Bug Tracker",
-        description:
-          "Recreation of  a bug-tracker that includes user login. ",
-        tags: ["NodeJS", "ReactJS", "MongoDB"],
-        source: "https://github.com/ryan-trampe/bug-tracker/tree/main/src",
-        id: 3,
-      },
+      title: "Fostr",
+      description:
+        "Web application child adoption solution for the browser. Shows a database of children for adoption and foster-parents looking to adopt",
+      tags: ["HTML", "Python (Django)", "Bootstrap", "Docker/Docker-Compose"],
+      source: "https://github.com/ryan-trampe/fostr_python",
+      id: 1,
+    },
+    {
+      title: "Custom Microprocessor",
+      description:
+        "Simulated 8-bit microprocessor with custom instruction. Custom components include program counter, instruction decoder, and program sequencer.",
+      tags: ["Quartus", "SystemVerilog"],
+      source: "https://github.com/ryan-trampe/accelerometer_track",
+      id: 2,
+    },
   ];
 
   return (

@@ -48,8 +48,9 @@
   width: 50px;
   height: 3px;
   margin: 20px auto;
+  border-radius: 2px;
   border: 0;
-  background: #d0bb57;
+  background: #b06adb;
 }
 /* div */
 .intro {
