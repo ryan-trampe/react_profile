@@ -6,36 +6,36 @@ import styles from "./ProjectsStyle.module.css";
 function Projects() {
   const projectList = [
     {
-      title: "Accelerometer Tracking",
-      description:
-        "Using A Tiva C series microcontroller, this device tracks the orientation of an object.",
-      tags: ["C", "Tiva C Series microcontroller"],
-      source: "https://github.com/ryan-trampe/accelerometer_track",
-      pic: "/pic0.png",
-      id: 0,
-    },
-    {
       title: "Fostr",
       description:
         "Web application child adoption solution for the browser. Shows a database of children for adoption and foster-parents looking to adopt",
-      tags: ["HTML", "Python (Django)", "Bootstrap", "Docker/Docker-Compose"],
+      tags: ["HTML", "Python (Flask)", "Bootstrap", "Docker/Docker-Compose"],
       source: "https://github.com/ryan-trampe/fostr_python",
       pic: "/pic1.png",
       id: 1,
+    },
+    {
+      title: "Accelerometer Tracking",
+      description:
+        "Using A Tiva C series microcontroller, this device tracks the orientation of an object.",
+      tags: ["C", "I2C", "Tiva C Series microcontroller"],
+      source: "https://github.com/ryan-trampe/accelerometer_track",
+      pic: "/pic0.png",
+      id: 0,
     },
     {
       title: "Custom Microprocessor",
       description:
         "Simulated 8-bit microprocessor with custom instruction. Custom components include program counter, instruction decoder, and program sequencer.",
       tags: ["Quartus", "SystemVerilog"],
-      source: "https://github.com/ryan-trampe/accelerometer_track",
+      source: "https://github.com/ryan-trampe/custom_micro",
       pic: "/pic2.png",
       id: 2,
     },
   ];
 
   return (
-    <section style={{ padding: 0 }} className="GlobalSection">
+    <section style={{ padding: 0 }} className="GlobalSection" id="projects">
       <div className="SectionDivider" />
       <h2
         style={{
@@ -61,7 +61,7 @@ function Projects() {
               </div>
               <p className={styles.CardInfo}>{p.description}</p>
               <div>
-                <div className={styles.TitleContent}>Stack</div>
+                <div className={styles.CardSubtitle}>Stack</div>
                 <ul className={styles.TagList}>
                   {p.tags.map((t, i) => {
                     return (

@@ -1,5 +1,23 @@
 import React, { createElement } from "react";
-import { DiReact, DiDatabase, DiAws, DiBootstrap, DiCss3, DiDocker, DiDotnet, DiGit, DiHtml5, DiJavascript, DiLinux, DiMongodb, DiMysql, DiNodejs, DiPython, DiRasberryPi, DiUbuntu } from "react-icons/di";
+import {
+  DiReact,
+  DiDatabase,
+  DiAws,
+  DiBootstrap,
+  DiCss3,
+  DiDocker,
+  DiDotnet,
+  DiGit,
+  DiHtml5,
+  DiJavascript,
+  DiLinux,
+  DiMongodb,
+  DiMysql,
+  DiNodejs,
+  DiPython,
+  DiRasberryPi,
+  DiUbuntu,
+} from "react-icons/di";
 import { GiCircuitry } from "react-icons/gi";
 import { IconType } from "react-icons/lib";
 
@@ -7,6 +25,8 @@ import styles from "./TechStyle.module.css";
 
 function Tech() {
   const techList: IconType[] = [
+    DiJavascript,
+    DiNodejs,
     DiReact,
     DiAws,
     DiBootstrap,
@@ -15,29 +35,27 @@ function Tech() {
     DiDotnet,
     DiGit,
     DiHtml5,
-    DiJavascript,
     DiLinux,
     DiMongodb,
     DiMysql,
-    DiNodejs,
     DiPython,
     DiRasberryPi,
-    DiReact,
-    DiUbuntu
+    DiUbuntu,
   ];
 
   return (
-    <section className="GlobalSection">
+    <section className="GlobalSection" id="tech">
       <div className="SectionDivide" />
       <h2 className="SectionTitle">Technologies</h2>
-      <p className="SectionText">
-        Here are the techonolgies I have worked with!
-      </p>
+      <p className="SectionText">Here are the techonolgies I have worked with!</p>
       {/* Auto-scrolling carousel */}
       <div className={styles.CarouselWrapper}>
         <div className={styles.marquee}>
           {techList.map((icon, idx) => {
-            return createElement("picture", {}, createElement(icon, { size: "8rem" }));
+            return createElement("picture", { key: idx }, createElement(icon, { size: "8rem" }));
+          })}
+          {techList.map((icon, idx) => {
+            return createElement("picture", { key: idx }, createElement(icon, { size: "8rem" }));
           })}
         </div>
       </div>
