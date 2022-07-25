@@ -83,6 +83,9 @@
   justify-content: space-around;
   margin: 2.5rem 0;
 }
+.CardSubtitle {
+  font-size: 2.5rem;
+}
 .ExternalLink {
   color: #d4c0c0;
   font-size: 1.6rem;
@@ -102,6 +105,6 @@
 }
 /* li */
 .Tag {
-  color: #d8bfbf;
+  color: #5ccfe6;
   font-size: 1.5rem;
 }

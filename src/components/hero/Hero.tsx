@@ -5,7 +5,7 @@ import styles from "./HeroStyle.module.css";
 
 function Hero(props:any) {
   return (
-    <section className="GlobalSection">
+    <section className="GlobalSection" id="home">
       <div className={styles.LeftSection}>
         <p className="SectionText">
           Hello, my name is

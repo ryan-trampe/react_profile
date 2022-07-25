@@ -140,8 +140,11 @@
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  animation: marquee 10s linear infinite;
+  animation: marquee 30s linear infinite;
 }
+/* .marquee picture {
+  display: inline-block;
+} */
 @keyframes marquee {
   0% {
     transform: translate3d(0, 0, 0);
