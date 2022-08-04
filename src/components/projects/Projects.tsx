@@ -32,6 +32,15 @@ function Projects() {
       pic: "/pic2.png",
       id: 2,
     },
+    {
+      title: "Project Testbench Verification",
+      description:
+        "Created a project testbench using formal verification techniques to test an example device.",
+      tags: ["SystemVerilog"],
+      source: "https://github.com/ryan-trampe/verification_proj",
+      pic: "/pic3.png",
+      id: 3,
+    },
   ];
 
   return (
